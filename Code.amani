@@ -1,0 +1,28 @@
+'''
+  Multi line
+  comment
+'''
+# test func
+def test1() {
+    int num
+    char letter1
+    char letter2
+    letter1 = 'A'
+    letter2 = 'B'
+    String word
+
+    if (True) {
+        word = letter1 + letter2
+    }
+}
+
+def test2() {
+    String name
+    int age
+    int count
+    bool isPressed
+
+    while(isPressed == True){
+        count = count + 1 ^ 7
+    }
+}
