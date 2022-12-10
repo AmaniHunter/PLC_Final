@@ -1,14 +1,14 @@
 # 1. 
-The [Token]() class contains the necessary ```string``` for lexeme representation and
+The [Token](https://github.com/AmaniHunter/PLC_Final/blob/master/Token.py) class contains the necessary ```string``` for lexeme representation and
 the necessary ```Int``` for token code
 
 # 2. 
-The [Compiler]() class contains a method that takes in an input file and converts it to one input str
+The [Compiler](https://github.com/AmaniHunter/PLC_Final/blob/master/Compiler.py) class contains a method that takes in an input file and converts it to one input str
 
 # 3.
 a. An instance of the [Lexer]() class lives in the [Compiler]() class
 
-b. [Lexer]() Takes in a string in its constructor
+b. [Lexer](https://github.com/AmaniHunter/PLC_Final/blob/master/Lexer.py) Takes in a string in its constructor
 
 ```python
 class Lexer:
@@ -21,10 +21,10 @@ c.
 Lexer's ```tokenizer``` function converts a string into a list of Token object if there exist no errors and ignores all comments
 
 d.
-[Lexer]()contains tokens and clear patterns to recognize
+[Lexer](https://github.com/AmaniHunter/PLC_Final/blob/master/Lexer.py)contains tokens and clear patterns to recognize
 
 # 4.
-[Parser]()
+[Parser](https://github.com/AmaniHunter/PLC_Final/blob/master/Parser.py)
 a. An instant of this class exists in the [Complier]() Class
 ```python
 parser = Parser(tokens) #inside compiler class
@@ -36,7 +36,7 @@ b. Takes in aa list of Token object in its constructor
 parser.beginParsing(parser.parseTree)  # inside compiler class
 ```
 
-c. [ParseTree]() outputs a parse tree of called functions that would recognize the input is syntactically correct
+c. [ParseTree](https://github.com/AmaniHunter/PLC_Final/blob/master/ParseTree.py) outputs a parse tree of called functions that would recognize the input is syntactically correct
 
 d. Grammar rules that satisfy a Top Down Parser
 ```
@@ -64,7 +64,7 @@ d. Grammar rules that satisfy a Top Down Parser
                           | [a-zA-Z_][a-zA-Z0-9_]* '(' {[a-zA-Z_][a-zA-Z0-9_]* ','} ')'
 ```
 
-e. [Parser]() is built from a set of mutually recursive procedures where each such procedure implements one of the nonterminals of the grammar. Thus the structure of the resulting program closely mirrors that of the grammar it recognizes.
+e. [Parser](https://github.com/AmaniHunter/PLC_Final/blob/master/Parser.py) is built from a set of mutually recursive procedures where each such procedure implements one of the nonterminals of the grammar. Thus the structure of the resulting program closely mirrors that of the grammar it recognizes.
 
 f. Code is able to handle multiple code statements
 
